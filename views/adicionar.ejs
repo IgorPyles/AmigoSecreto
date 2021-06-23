@@ -1,0 +1,22 @@
+<%- include ('partials/header.ejs')%>
+<%- include ('partials/navbar.ejs')%>
+    <div class="container">
+        <hr>
+        <div class="card">
+            <div class="card-header">
+                <h2>Adicionar participantes</h2>
+            </div>
+            <div class="card-body">
+                <form action="/salvar" method="POST">
+                    <input class="form-control" type="text" name="Nome" placeholder="Nome">
+                    <br>
+                    <input class="form-control" type="text" name="Email" placeholder="Email">
+                    <br>
+                    <button class="btn btn-warning">Adicionar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  </body>
+</html>
